@@ -8,9 +8,7 @@
     <meta name="Description" content="Template portafolio desarrollador UI/UX " />
     <title>Portafolio</title>
     <link rel="stylesheet" href="style.css" />
-
     <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
-    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
     <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
 </head>
 
@@ -30,14 +28,13 @@
             </div>
             <div class="header__info flex align-items-center gap-3">
                 <ul class="flex flex-column xl:flex-row list-none">
-                    <li onclick="scrollToSection('about')">Sobre mí</li>
-                    <li onclick="scrollToSection('services')">Servicios</li>
-                    <li onclick="scrollToSection('portfolio')">Portafolio</li>
-                    <li onclick="scrollToSection('contact')">Contacto</li>
+                    <li onclick="scrollToSection('about')" class="text-lg xl:text-base">About Me</li>
+                    <li onclick="scrollToSection('portfolio')" class="text-lg xl:text-base">Portafolio</li>
+                    <li onclick="scrollToSection('contact')" class="text-lg xl:text-base">Contact</li>
                 </ul>
                 <div class="hireMe__button pt-4">
-                    <a href="mailTo:walter.greenwich@email.com" aria-label="Enviar mensaje al correo"
-                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contrátame</a>
+                    <a href="mailTo:walter.greenwich@gmail.com" aria-label="Send email"
+                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Hire Me</a>
                 </div>
             </div>
         </nav>
@@ -49,7 +46,7 @@
             <div class="left__content col-12 xl:col-6">
                 <div class="message__bubble triangle mb-4 md:mb-2">
                     <div class="message__text p-2 sm:p-3 text-center">
-                        <p>Hola, Yo soy</p>
+                        <p>Hi 👋, I'm</p>
                     </div>
                 </div>
                 <h1 class="text-3xl sm:text-5xl md:text-7xl">Walter Greenwich</h1>
@@ -57,259 +54,163 @@
                     Full Stack Web Developer
                 </p>
                 <div class="home__buttons flex align-items-center gap-2 mt-6">
-                    <a href="./assets/CURRICULUM.pdf" aria-label="Descargar curriculum"
-                        class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
-                    <button onclick="scrollToSection('portfolio')" aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
-                        class="cursor-pointer border-round-lg">Mi trabajo</button>
+                    <a href="./assets/Resume_Walter_Greenwich.pdf" aria-label="Open resume in new tab" target="_blank"
+                        class="cursor-pointer border-round-lg no-underline">Download CV</a>
+
+                    <button onclick="scrollToSection('portfolio')"
+                        aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
+                        class="cursor-pointer border-round-lg">Projects</button>
                 </div>
             </div>
             <div class="right__content col-9 sm:col-6 xl:col-5">
-                <img src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100">
+                <img src="./assets/WG_profile_3webp.webp" alt="Foto perfil" width="100" height="100">
             </div>
         </section>
         <!--ABOUT ME-->
         <section id="about" class="about__me w-full min-h-screen flex align-items-center">
             <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
                 <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
-                    <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        em magni harum sit eum aperiam repellat, incidunt provident dolor laborum animi
-                        nam eaque nobis illo est. Qui culpa itaque enim aspernatur?</p>
+                    <h1 class="text-3xl md:text-5xl">About me</h1>
+                    <p class="text-gray-500">
+                        As a Full Stack Developer with apprentice-level experience, I bring a diverse set of skills
+                        and experiences. I am passionate about leveraging technology to create impactful solutions
+                        and constantly seek opportunities to expand my knowledge and hone my craft.
+                    </p>
+                    <p style="margin-bottom: 20px;"></p>
+                    <p class="text-gray-500">
+                        I specialize in Back-end development, taking advantage of my knowledge of agile methodologies,
+                        GIT,
+                        data structures, algorithms and CSS frameworks to deliver robust and efficient solutions.
+                    </p>
+
                     <div class="knowledge flex flex-column gap-3 mt-5">
-                        <p>Wordpress 100%</p>
-                        <div class="progress__bar progress__wordpress">
-                            <span></span>
-                        </div>
-                        <p>HTML 75%</p>
-                        <div class="progress__bar progress__html">
-                            <span></span>
-                        </div>
-                        <p>Angular 80%</p>
-                        <div class="progress__bar progress__angular">
-                            <span></span>
-                        </div>
-                        <p>React Js 95%</p>
-                        <div class="progress__bar progress__reactJs">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="hireMe__button pt-4">
-                        <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
-                            class="cursor-pointer no-underline border-round-lg">Contratame</a>
+                        <h3 align="left">Languages and Tools:</h3>
+                        <p align="left">
+                            <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"
+                                style="margin-right: 10px;"> <img
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                                    alt="html5" width="40" height="40" /> </a>
+                            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"
+                                style="margin-right: 10px;"> <img
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                                    alt="css3" width="40" height="40" /> </a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                                rel="noreferrer" style="margin-right: 10px;"> <img
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                                    alt="javascript" width="40" height="40" /> </a>
+                            <a href="https://reactjs.org/" target="_blank" rel="noreferrer" style="margin-right: 10px;">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                                    alt="react" width="40" height="40" /> </a>
+                            <a href="https://redux.js.org" target="_blank" rel="noreferrer" style="margin-right: 10px;">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                                    alt="redux" width="40" height="40" /> </a>
+                            <a href="https://nodejs.org" target="_blank" rel="noreferrer" style="margin-right: 10px;">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                                    alt="nodejs" width="40" height="40" /> </a>
+                            <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"
+                                style="margin-right: 10px;"> <img
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                                    alt="postgresql" width="40" height="40" /> </a>
+                            <a href="https://git-scm.com/" target="_blank" rel="noreferrer" style="margin-right: 10px;">
+                                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git"
+                                    width="40" height="40" /> </a>
+                            <a href="https://postman.com" target="_blank" rel="noreferrer" style="margin-right: 10px;">
+                                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                                    alt="postman" width="40" height="40" /> </a>
+                        </p>
                     </div>
 
                 </div>
                 <div class="image col p-0 mt-6 md:mt-0">
-                    <img src="./assets/freelancer.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                    <img src="./assets/freelancer2.webp" alt="Foto relacionado a acerca de mí" width="100" height="100">
                 </div>
             </div>
         </section>
     </div>
-    <!--FREE LANCER SECTION -->
-    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
-        <p class="text-sm">Tienes un proyecto en mente?</p>
-        <h1 class="text-center">Estoy disponible como freelancer</h1>
-        <div class="hireMe__button pt-4">
-            <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
-                class="cursor-pointer no-underline border-round-lg">Escríbeme</a>
+
+
+    <!--PORTFOLIO -->
+    <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+        <div class="portfolio__title flex flex-column gap-3 text-center">
+            <h1 class="text-3xl md:text-5xl">My Proyects</h1>
+            <p class="text-gray-400 text-sm md:text-lg">
+                Here is a description of some of my recent projects:
+            </p>
+        </div>
+        <div class="portfolio__gallery">
+            <div class="gallery__categories mb-5 mt-5 ">
+                <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                    <li class="filter-item active text-lg" data-filter="all">All</li>
+                    <li class="filter-item text-lg" data-filter="blog">Blog</li>
+                    <li class="filter-item text-lg" data-filter="e__commerce">E-commerce</li>
+                    <li class="filter-item text-lg" data-filter="bootcamp_proyect">Bootcamp Proyect</li>
+                </ul>
+            </div>
+            <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                <div class="project__card blog">
+                    <img src="./assets/proyecto_1.webp" alt="">
+                    <div class="overlay"></div>
+                    <div
+                        class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                        <h2>Film Blog</h2>
+                        <p>Created a blog where I maintained a consistent look and feel throughout the website, including colors, 
+                            typography, button styles, and navigation elements, to create a consistent user experience.
+                        </p>
+                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </div>
+                <div class="project__card bootcamp_proyect">
+                    <img src="./assets/proyecto_2.webp" alt="">
+                    <div class="overlay"></div>
+                    <div
+                        class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                        <h2>Countries App</h2>
+                        <p>The objective was to develop and design a SPA using technologies such as React and Redux, and the 
+                            creation of RESTful APIs using Express and Node.js, and managed databases with PostgreSQL.
+                        </p>
+                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </div>
+                <div class="project__card e__commerce">
+                    <img src="./assets/proyecto_3.webp" alt="">
+                    <div class="overlay"></div>
+                    <div
+                        class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                        <h2>E-commerce</h2>
+                        <p>Under Construction
+                        </p>
+                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!--SERVICES -->
-    <div class="container">
-        <section id="services" class="services min-h-full w-full pb-7">
-            <div class="services__title flex flex-column gap-3 text-center">
-                <h1 class="text-3xl md:text-5xl">Mis servicios</h1>
-                <p class="text-gray-400 text-sm md:text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
-                    recusandae placeat aliquam veniam officiis cum quam eum architecto quidem, nobis commodi consequatur
-                    distinctio ullam non.
-                </p>
-            </div>
-            <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
-                <div class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center">
-                        <i class="fa-brands fa-html5"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>HTML</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-wordpress"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Wordpress</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-angular"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Angular</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-react"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>React Js</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Desarrollo Móvil</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Desarrollo web</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!--PORTFOLIO -->
-        <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
-            <div class="portfolio__title flex flex-column gap-3 text-center">
-                <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
-                <p class="text-gray-400 text-sm md:text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
-                    recusandae placeat aliquam veniam officiis cum quam eum architecto quidem, nobis commodi consequatur
-                    distinctio ullam non.
-                </p>
-            </div>
-            <div class="portfolio__gallery">
-                <div class="gallery__categories mb-5 mt-5">
-                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
-                        <li class="filter-item active" data-filter="all">Todos</li>
-                        <li class="filter-item " data-filter="gym">Gimnasio</li>
-                        <li class="filter-item " data-filter="tours__Web">Tours web</li>
-                        <li class="filter-item " data-filter="world__Tours">Inmobiliaria web</li>
-                        <li class="filter-item " data-filter="e__commerce">E-commerce</li>
-                    </ul>
-                </div>
-                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
-                    <div class="project__card tours__Web">
-                        <img src="./assets/proyecto-1.png" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <div class="project__card e__commerce">
-                        <img src="./assets/proyecto-2.png" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <div class="project__card tours__Web">
-                        <img src="./assets/proyecto-3.png" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <div class="project__card gym">
-                        <img src="./assets/proyecto-4.jpeg" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <div class="project__card world__Tours">
-                        <img src="./assets/proyecto-5.jpg" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <div class="project__card tours__Web">
-                        <img src="./assets/proyecto-6.webp" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Travel Tours</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
-                            </p>
-                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--FOOTER -->
-        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
-            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
-                <h3>Redes sociales</h3>
-                <p>Auténtico e innovador</p>
-                <p>Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento</p>
-                <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
-                    <a href="https://www.facebook.com" target="_blank" aria-label="Ir a facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" aria-label="Ir a instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" aria-label="Ir a linkedin">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
-                <h3>Contacto</h3>
-                <div class="phone__number flex align-items-center gap-2">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+593 0953284694</p>
-                </div>
-                <div class="email flex align-items-center gap-2">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>john@email.com</p>
-                </div>
-                <a href="mailTo:john@email.com"
-                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
-                    <span>
-                        <i class="fa-solid fa-message"></i>
-                    </span>Escríbeme
-                </a>
-            </div>
-            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
-                <h3>Mis Servicios</h3>
-                <p>Desarrollo web</p>
-                <p>Desarrollo móvil</p>
-                <p>Diseñador UI /UX</p>
-                <P>Marketing Digital</P>
-            </div>
-        </footer>
+    <!--FREE LANCER SECTION -->
+    <section id="contact" class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+        <p class="text-sm">Do you have a project in mind?</p>
+        <h1 class="text-center">I'm available as a freelancer</h1>
+        <div class="hireMe__button pt-4">
+            <a href="mailTo:walter.greenwich@gmail.com" aria-label="Send message to email"
+                class="cursor-pointer border-round-lg no-underline">Contact Me</a>
+        </div>
+        <div class="email-box mt-4 p-2 border border-gray-300 rounded-lg flex items-center">
+            <input type="text" value="walter.greenwich@gmail.com" id="emailInput"
+                class="flex-grow outline-none bg-transparent text-gray-700" readonly>
+            <button onclick="copyEmail()"
+                class="ml-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg cursor-pointer">Copy</button>
+        </div>
+    </section>
+
+    <script>
+        function copyEmail() {
+            var emailInput = document.getElementById("emailInput");
+            emailInput.select();
+            document.execCommand("copy");
+            alert("Email copied to clipboard: " + emailInput.value);
+        }
+    </script>
+    <!--FOOTER -->
     </div>
 
 </body>
@@ -334,8 +235,8 @@
         }
     })
 
-    function scrollToSection(sectionId){
-        document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
     }
 </script>
 

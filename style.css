@@ -17,6 +17,39 @@ body {
     color: var(--font-color);
     height: 100vh;
     max-width: 100vw;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño grande para h1 */
+}
+
+h2 {
+    font-size: 2rem; /* Tamaño mediano para h2 */
+}
+
+h3 {
+    font-size: 1.5rem; /* Tamaño más pequeño para h3 */
+}
+
+/* Ajustar el tamaño de la letra para los párrafos */
+p {
+    font-size: 1rem; /* Tamaño normal para párrafos */
+}
+
+/* Ajustar el tamaño de la letra para los enlaces */
+a {
+    font-size: 1rem; /* Tamaño normal para enlaces */
+}
+
+/* Ajustar el tamaño de la letra para las listas */
+ul, ol {
+    font-size: 1rem; /* Tamaño normal para listas */
 }
 
 .container {
@@ -71,10 +104,11 @@ body::-webkit-scrollbar-track {
     background-color: var(--secondary-bg-color);
     color: var(--font-color);
     font-family: var(--font);
-    font-size: small;
+    font-size: 16px;
     padding: 1rem 1.5rem;
     border-color: unset;
     border-width: 0;
+    font-family: 'Poppins', sans-serif;
 }
 .header__info ul li:hover {
     background-color: var(--secondary-bg-color);
@@ -214,14 +248,16 @@ body::-webkit-scrollbar-track {
 .message__text {
     padding: 1rem;
 }
+
 .home__buttons button {
     padding: 1rem 2rem;
     color: var(--font-color);
+    text-decoration: none;
 }
 
 .home__buttons a {
     background-color: var(--secondary-bg-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #fff;
     padding: 1rem 1.5rem;
 }
@@ -230,9 +266,15 @@ body::-webkit-scrollbar-track {
     border: 1px solid #fff;
     border-width: thin;
     font-family: var(--font);
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #fff;
     padding: 1rem 1.5rem;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button:hover {
+    background-color: #ff7004; /* Cambia el color de fondo al pasar el mouse */
 }
 
 @media screen and (max-width: 576px) {
@@ -260,34 +302,6 @@ body::-webkit-scrollbar-track {
     object-fit: cover;
 }
 
-.progress__bar {
-    width: 100%;
-    height: 0.2rem;
-    position: relative;
-    background-color: #707070;
-}
-
-.progress__bar span {
-    height: 100%;
-    position: absolute;
-}
-.progress__wordpress span {
-    background-color: #ff4900;
-    width: 100%;
-}
-.progress__html span {
-    background-color: #ff7004;
-    width: 75%;
-}
-.progress__angular span {
-    background-color: #ff9809;
-    width: 80%;
-}
-.progress__reactJs span {
-    background-color: #ff9809;
-    width: 95%;
-}
-
 /* ------- FREE LANCER -------- */
 
 .freelancer {
@@ -298,44 +312,22 @@ body::-webkit-scrollbar-track {
     background-position: center;
 }
 
-/* ------- SERVICES -------- */
-.services {
-    padding-top: 81px;
-}
-.card {
-    background-color: #111111;
-    transition: all 0.2s ease-in;
-}
-.service__logo {
-    height: 60px;
-    width: 60px;
-    background-color: #000;
-    border-radius: 50%;
-    transition: all 0.2s ease-in;
-}
-
-.service__logo i {
-    font-size: x-large;
-    transition: all 0.2s ease-in;
-}
-
-.card:hover {
-    background-color: var(--secondary-bg-color);
-}
-.card:hover .service__logo {
-    background-color: #fff;
-}
-.card:hover .service__logo i {
-    color: #000;
-}
-
 
 /* ------- PORTFOLIO -------- */
+
+.project__info h2 {
+    font-size: 1.6rem; /* Tamaño más grande para los títulos de los proyectos */
+}
+
+.project__info p {
+    font-size: 1.0rem; /* Tamaño más pequeño para la descripción de los proyectos */
+}
 
 .gallery__categories ul li {
     font-size: small;
     cursor: pointer;
 }
+
 .gallery__categories .filter-item.active {
     border-bottom: 1px solid var(--secondary-bg-color);
 }
@@ -390,7 +382,6 @@ body::-webkit-scrollbar-track {
     cursor: pointer;
 }
 
-
 .project__card:hover .project__info {
     top: 50%;
     left: 50%;
@@ -401,7 +392,6 @@ body::-webkit-scrollbar-track {
 .project__card:hover .overlay {
     opacity: 1;
 }
-
 
 .project__card.hide {
     display: none;
@@ -416,36 +406,4 @@ body::-webkit-scrollbar-track {
     100% {
         opacity: 1;
     }
-}
-
-/* ------- FOOTER -------- */
-footer {
-    border-top: 2px solid #fff;
-}
-
-:is(.social__media, .contact, .my__services) h3 {
-    margin-bottom: 1rem;
-}
-
-:is(.social__media, .contact, .my__services) p,
-:is(.fa-phone, .fa-envelope, .fa-message, .fa-brands) {
-    color: #a3a3a3;
-}
-
-.social__mediaIcons .fa-brands {
-    font-size: 2rem;
-    transition: all 0.2s ease-in;
-    cursor: pointer;
-}
-
-.social__mediaIcons .fa-brands:hover {
-    color: var(--secondary-bg-color);
-}
-.contact a {
-    padding: 0.5rem 1.8rem;
-    background-color: unset;
-    border: 1px solid var(--secondary-bg-color);
-    font-family: var(--font);
-    font-size: 0.9rem;
-    color: #a3a3a3;
 }
