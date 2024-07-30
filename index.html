@@ -54,10 +54,10 @@
                     Full Stack Web Developer
                 </p>
                 <div class="home__buttons flex align-items-center gap-2 mt-6">
-                    <a href="./assets/Resume_Walter_Greenwich.pdf" aria-label="Open resume in new tab" target="_blank"
+                    <a href="./assets/Resume Walter Greenwich FullStack.pdf" aria-label="Open resume in new tab" target="_blank"
                         class="cursor-pointer border-round-lg no-underline">Download CV</a>
-
-                    <button onclick="scrollToSection('portfolio')"
+                        <a href="https://github.com/WGreenwichChaca" target="_blank" class="cursor-pointer border-round-lg no-underline">GitHub</a>
+                        <button onclick="scrollToSection('portfolio')"
                         aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
                         class="cursor-pointer border-round-lg">Projects</button>
                 </div>
@@ -140,58 +140,74 @@
             <div class="gallery__categories mb-5 mt-5 ">
                 <ul class="flex list-none flex-wrap justify-content-center gap-3">
                     <li class="filter-item active text-lg" data-filter="all">All</li>
-                    <li class="filter-item text-lg" data-filter="blog">Blog</li>
                     <li class="filter-item text-lg" data-filter="e__commerce">E-commerce</li>
+                    <li class="filter-item text-lg" data-filter="personal_project">Personal Projects</li>
                     <li class="filter-item text-lg" data-filter="bootcamp_project">Bootcamp Projects</li>
+                    <li class="filter-item text-lg" data-filter="blog">Blog</li>
                 </ul>
             </div>
             <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
-                <div class="project__card blog">
-                    <a href="https://cyberpunk-en-akira-y-blade-runner.netlify.app" target="_blank">
-                        <img src="./assets/proyecto_1.webp" alt="home page of blog">
+                <div class="project__card e__commerce">
+                    <a href="https://nike-web-clone-wltgr.netlify.app/" target="_blank">
+                        <img src="./assets/proyecto_1.webp" alt="home page of Nike clone">
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Film Blog</h2>
-                            <p>Created a blog where I maintained a consistent look and feel throughout the website,
-                                including colors, typography, button styles, and navigation elements, to create a 
-                                consistent user experience using HTML, CSS and JavaScript.
+                            <h2>Nike clone</h2>
+                            <p>I created a Nike e-commerce homepage.
+                               <br> - In Frontend Development with React: Harnessing the power of reusable components.
+                               <br> - Responsive Design with Tailwind CSS: Applying best practices to ensure a design adaptable to any device.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
                     </a>
                 </div>
+
+                <div class="project__card personal_project">
+                    <a href="https://aplicacion-clima-react-wgreenwich.netlify.app/" target="_blank">
+                        <img src="./assets/proyecto_2.webp" alt="Weather app">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Weather app</h2>
+                            <p>This application allows users to obtain real-time information about the weather of any city in the world; and also exchange between degrees Celsius and Fahrenheit:
+                                <br> - Used React Hooks for state management,
+                                <br> - Tailwind CSS for responsive design and
+                                <br> - Consumption of the OpenWeatherMap API to obtain weather data.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </a>
+                </div>
+
                 <div class="project__card bootcamp_project">
                     <a href="https://countriesapp-front.vercel.app" target="_blank">
-                        <img src="./assets/proyecto_2.webp" alt="image of landing page">
+                        <img src="./assets/proyecto_3.webp" alt="image of landing page of countriesapp">
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
                             <h2>Countries App</h2>
-                            <p>The objective was to develop and design a SPA using technologies such as React and Redux,
-                                and the creation of RESTful APIs using Express and Node.js, and managed databases with
-                                PostgreSQL.
+                            <p>The objective was to develop and design a SPA using technologies such as React and Redux, and the creation of RESTful APIs using Express and Node.js, and managed databases with PostgreSQL.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
                     </a>
                 </div>
-                <div class="project__card e__commerce">
-                    <a href="https://events-app-eta-ruddy.vercel.app/" target="_blank">
-                        <img src="./assets/proyecto_3.webp" alt="image of landing page">
+
+                <div class="project__card blog">
+                    <a href="https://cyberpunk-en-akira-y-blade-runner.netlify.app" target="_blank">
+                        <img src="./assets/proyecto_4.webp" alt="home page of blog">
                         <div class="overlay"></div>
                         <div
                             class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>E-commerce</h2>
-                            <p>The objective was to develop and design a SPA that integrates a payment gateway with Stripe
-                                and Google authentication, using:
-                                Technologies: React, React-Query, Zustand, Building RESTful APIs with Express, Node.js,
-                                Databases with PostgreSQL and UX Style and Design: UI with Tailwind
+                            <h2>Film Blog</h2>
+                            <p>Created a blog where I maintained a consistent look and feel throughout the website, including colors, typography, button styles, and navigation elements, to create a consistent user experience using HTML, CSS and JavaScript.
                             </p>
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </div>
                     </a>
                 </div>
+                
             </div>
         </div>
     </section>
