@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Portafolio desarrollador Frontend" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="./assets/Logo-Walt.webp" alt="Logo portfolio" width="50" height="50">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li onclick="scrollToSection('about')" class="text-lg xl:text-base">Sobre mí</li>
+                    <li onclick="scrollToSection('portfolio')" class="text-lg xl:text-base">Portfolio</li>
+                    <li onclick="scrollToSection('contact')" class="text-lg xl:text-base">Contacto</li>
+                </ul>
+                <div class="hireMe__button pt-4">
+                    <a href="mailTo:waltgreenwich.devsec@gmail.com" aria-label="Send email"
+                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contrátame</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HOME PAGE -->
+    <div class="container">
+        <section id="home"
+            class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+            <div class="left__content col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <p>Hola 👋, soy</p>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl">Walter Greenwich</h1>
+                <p class="text-gray-500">
+                    Desarrollador Web Full Stack
+                </p>
+                <div class="home__buttons flex align-items-center gap-2 mt-6">
+                    <a href="./assets/CV Walter Greenwich FullStack.pdf" aria-label="Open resume in new tab" target="_blank"
+                        class="cursor-pointer border-round-lg no-underline">Descargar CV</a>
+                        <a href="https://github.com/WaltGreenwich" target="_blank" class="cursor-pointer border-round-lg no-underline">GitHub</a>
+                        <button onclick="scrollToSection('portfolio')"
+                        aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
+                        class="cursor-pointer border-round-lg">Proyectos</button>
+                </div>
+            </div>
+            <div class="right__content col-9 sm:col-6 xl:col-5">
+                <img src="./assets/perfilWalt.webp" alt="Foto perfil" width="100" height="100" >
+            </div>
+        </section>
+        <!--ABOUT ME-->
+        <section id="about" class="about__me w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
+                    <p class="text-gray-500">
+                        Soy un desarrollador Full Stack junior y poseo un conjunto diverso de habilidades para crear soluciones impactantes. Me apasiona la tecnología, me gusta aprender tecnologías innovadoras y poner a prueba lo que he aprendido.
+                    </p>
+                    <p style="margin-bottom: 20px;"></p>
+                    <p class="text-gray-500">
+                        Me especializo en desarrollo Front-end, aprovechando mi conocimiento en React.js, Next.js y Tailwind, así como metodologías ágiles, GIT, estructuras de datos y algoritmos para ofrecer soluciones responsivas y eficientes.
+                    </p>
+
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <h3 align="left">Lenguajes y Herramientas:</h3>
+                        <p align="left">
+
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" style="margin-right: 15px;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" /></a>
+
+                            <a href="https://nextjs.org/" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://logowik.com/content/uploads/images/nextjs2106.logowik.com.webp" alt="nextjs" width="40" height="40"/></a> 
+
+                            <a href="https://reactjs.org/" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /></a>
+
+                            <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/768px-Tailwind_CSS_Logo.svg.png?20230715030042" alt="tailwind" width="40" height="40"/></a>
+
+                            <a href="https://nodejs.org" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40" /></a>
+
+                            <a href="https://expressjs.com" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://i0.wp.com/www.factfc.com/wp-content/uploads/2024/04/express-js.png?w=240&ssl=1" alt="express" width="40" height="40"/></a>
+
+                            <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/></a>
+
+                            <a href="https://www.postgresql.org" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" /></a>
+
+                            <a href="https://redux.js.org" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40" /></a> 
+
+                            <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" /></a>
+
+                            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" /></a>
+
+                            <a href="https://git-scm.com/" target="_blank" rel="noreferrer" style="margin-right: 10px;"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" /></a>  
+
+                            <a href="https://postman.com" target="_blank" rel="noreferrer" style="text-decoration: none; margin-right: 10px;"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40" /></a>
+
+                        </p>
+                    </div>
+
+                </div>
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="./assets/freelancer2.webp" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!--PORTFOLIO -->
+    <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+        <div class="portfolio__title flex flex-column gap-3 text-center">
+            <h1 class="text-3xl md:text-5xl">Portfolio</h1>
+            
+        </div>
+        <div class="portfolio__gallery">
+            <div class="gallery__categories mb-5 mt-5 ">
+                <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                    <li class="filter-item active text-lg" data-filter="all">All</li>
+                    <li class="filter-item text-lg" data-filter="e__commerce">E-commerce</li>
+                    <li class="filter-item text-lg" data-filter="personal_project">Personal Projects</li>
+                    <li class="filter-item text-lg" data-filter="modern_uxui">UI/UX Moderno</li>
+                    <li class="filter-item text-lg" data-filter="blog">Blog</li>
+                </ul>
+            </div>
+            <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                <div class="project__card e__commerce">
+                    <a href="https://nike-web-clone-wltgr.netlify.app/" target="_blank">
+                        <img src="./assets/proyecto_1.webp" alt="home page of Nike clone">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Nike clone</h2>
+                            <p>Creé una página principal de e-commerce de Nike.
+                                <br> - En desarrollo frontend con React: Aprovechando el poder de los componentes reutilizables.
+                                <br> - Diseño responsivo con Tailwind CSS: Aplicando las mejores prácticas para asegurar un diseño adaptable a cualquier dispositivo.
+                            </p>
+                            
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project__card personal_project">
+                    <a href="https://aplicacion-clima-react-wgreenwich.netlify.app/" target="_blank">
+                        <img src="./assets/proyecto_2.webp" alt="Weather app">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Weather app</h2>
+                            <p>Esta aplicación permite a los usuarios obtener información en tiempo real sobre el clima de cualquier ciudad del mundo; y también cambiar entre grados Celsius y Fahrenheit:
+                                <br> - Utilicé React Hooks para la gestión del estado,
+                                <br> - Tailwind CSS para el diseño responsivo y
+                                <br> - Consumo de la API de OpenWeatherMap para obtener datos meteorológicos.
+                            </p>
+                            
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project__card modern_uxui">
+                    <a href="https://waltgreenwich-brainwave.netlify.app/" target="_blank">
+                        <img src="./assets/brainwave.webp" alt="image of landing page of brainwave">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Brainwave</h2>
+                            <p>Brainwave es un sitio web moderno desarrollado con React.js y Tailwind CSS, que sigue los principios más avanzados de diseño UI/UX. Su diseño elegante, animaciones fluidas y experiencia de usuario establecen un estándar elevado, siendo una referencia o fuente de inspiración para aplicaciones o sitios web modernos futuros.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project__card blog">
+                    <a href="https://cyberpunk-en-akira-y-blade-runner.netlify.app" target="_blank">
+                        <img src="./assets/proyecto_4.webp" alt="home page of blog">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Blog de Cine</h2>
+                            <p>Creé un blog donde mantuve una apariencia y sensación consistentes en todo el sitio web, incluyendo colores, tipografía, estilos de botones y elementos de navegación, para crear una experiencia de usuario coherente utilizando HTML, CSS y JavaScript.</p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </a>
+                </div>F
+                
+            </div>
+        </div>
+    </section>
+
+    <!--FREE LANCER SECTION -->
+    <section id="contact"
+        class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+        <p class="text-sm">¿Tienes un proyecto en mente?</p>
+<h1 class="text-center">Estoy disponible como freelancer</h1>
+
+        <div class="hireMe__button pt-4">
+            <a href="mailTo:waltgreenwich.devsec@gmail.com" aria-label="Send message to email"
+                class="cursor-pointer border-round-lg no-underline">Contact Me</a>
+        </div>
+        <div class="email-box mt-4 p-2 border border-gray-300 rounded-lg flex items-center">
+            <input type="text" value="waltgreenwich.devsec@gmail.com" id="emailInput"
+                class="flex-grow outline-none bg-transparent text-gray-700" readonly>
+            <button onclick="copyEmail()"
+                class="ml-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg cursor-pointer">Copy</button>
+        </div>
+    </section>
+
+    <script>
+        function copyEmail() {
+            var emailInput = document.getElementById("emailInput");
+            emailInput.select();
+            document.execCommand("copy");
+            alert("Email copied to clipboard: " + emailInput.value);
+        }
+    </script>
+    <!--FOOTER -->
+    </div>
+
+</body>
+<script>
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
+    }
+</script>
+
+</html>
